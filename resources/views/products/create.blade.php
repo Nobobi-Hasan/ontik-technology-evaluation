@@ -14,7 +14,6 @@
 
                 <div class="card-body">
 
-                    {{-- <form action="#" method="post" enctype="multipart/form-data"> --}}
                     <form action="{{ route('store') }}" method="post" enctype="multipart/form-data">
                         @csrf
 
@@ -84,7 +83,4 @@
     </div>
 </div>
 
-<script>
-    addOrUpdateURLParam('name', 'Shatin')
-</script>
 @endsection

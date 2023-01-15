@@ -99,7 +99,6 @@
                                                 <li>
                                                     <form action="{{ route('destroy', $product->id) }}" method="post">
                                                         @csrf
-                                                        {{-- @method('DELETE') --}}
                                                         <button class="dropdown-item show_confirm" type="submit"><i class="fas fa-trash"></i> Delete</a></button>
                                                     </form>
                                                 </li>

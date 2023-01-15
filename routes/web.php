@@ -9,7 +9,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-// Route::group(['middleware'=>['PreventBackHistory']], function(){
 Route::middleware('PreventBackHistory')->group(function () {
     Route::get('/home', [App\Http\Controllers\ProductController::class, 'index'])->name('home');
 

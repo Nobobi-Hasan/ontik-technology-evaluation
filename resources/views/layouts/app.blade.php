@@ -88,47 +88,27 @@
                 console.error( error );
             } );
     </script>
-    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+    
+
     {!! Toastr::message() !!}
 
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-
-    {{-- <script>
-        $(document).ready(function () {
-        $('#dataTable').DataTable({
-            pagingType: 'first_last_numbers',
-        });
-        $('.show_confirm').click(function(event){
-            let form = $(this).closest('form');
-            event.preventDefault();
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, delete it!'
-                }).then((result) => {
-                if (result.isConfirmed) {
-                    form.submit();
-                    Swal.fire(
-                    'Deleted!',
-                    'Your file has been deleted.',
-                    'success'
-                    )
-                }
-                })
-        })
-    });
-    </script> --}}
 
     <script>
         $(document).ready(function () {
             $('#dataTable').DataTable();
         });
     </script>
+
+    <style>
+        .toast-success {
+            background-color: #51a351 !important;
+        }
+        .toast-error {
+            background-color: #bd362f !important;
+        }
+    </style>
     
 </body>
 </html>
